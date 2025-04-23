@@ -1,0 +1,11 @@
+<mvc:View controllerName="custom.attachment.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:custom="custom.attachment.utils.control"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <VBox>
+            <custom:ProductRating id="rating" class="sapUiSmallMarginBeginEnd" change=".onRatingChange" />
+            <custom:AttachmentHelper documentData="{ModuleMappingMdl>/contract}" sourceId="contract123" sourceFor="contract" uploadCompleted="onUploadFinished" download="onDownload" />
+        </VBox>
+    </Page>
+</mvc:View>
